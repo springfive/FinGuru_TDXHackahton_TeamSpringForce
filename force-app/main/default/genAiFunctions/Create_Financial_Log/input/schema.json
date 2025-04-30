@@ -1,0 +1,35 @@
+{
+  "required" : [ "Amount_from_user", "Email_From_user", "Financial_Log_Name" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Amount" : {
+      "title" : "Amount",
+      "description" : "Number",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Amount_from_user" : {
+      "title" : "Amount_from_user",
+      "description" : "Number",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Email_From_user" : {
+      "title" : "Email_From_user",
+      "description" : "Free Text",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Financial_Log_Name" : {
+      "title" : "Financial_Log_Name",
+      "description" : "Free Text",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

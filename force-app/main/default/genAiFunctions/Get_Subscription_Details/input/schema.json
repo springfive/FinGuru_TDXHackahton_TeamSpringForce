@@ -1,0 +1,14 @@
+{
+  "required" : [ "GetRandomInput" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "GetRandomInput" : {
+      "title" : "GetRandomInput",
+      "description" : "Send 'Give Subscription' text as input",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

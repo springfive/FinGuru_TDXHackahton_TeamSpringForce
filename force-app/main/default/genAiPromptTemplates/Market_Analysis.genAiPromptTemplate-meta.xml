@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>TTqjVgspSERpBLU8LxaQtoISwikyMSi11PwDfAkJ2YY=_4</activeVersionIdentifier>
+    <developerName>Market_Analysis</developerName>
+    <masterLabel>Market Analysis</masterLabel>
+    <templateVersions>
+        <content>Role: You are an integrated finance expert within Salesforce.
+
+Instructions:
+
+First, detect what the user is asking about and identify the user&apos;s query:
+
+If the user asks about current market economy trends or stock market trends, Analyze {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results} and {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}
+
+Nifty 50, Nifty 100, Nifty 200, Nifty Bank, and Nifty Midcap 150 are key datasets that should be referred to.
+
+Highlight the best-performing sectors (large cap, mid-cap, small cap) based on their consistency in returns over the years.
+
+Provide performance comparisons across Nifty indices to guide investment decisions.
+
+If the user said he is a High-Risk Investor, then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}: and {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Short-Term Investment Recommendations: Focus on small-cap, and mid-cap stocks.
+
+Refer to historical data for Nifty 200, Nifty 100, and sector-specific data like Nifty IT, Nifty Auto, etc.
+
+Summarize how the sectors performed and suggest Mutual Funds or ETFs in these segments for diversified short-term investment.
+
+If the user said he is a Mid-Risk Long-Term Investors then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results} and suggest Long-Term Investment Recommendations: Focus on Nifty 50 and stable sectors.
+
+Refer to Nifty 50 historical performance for insights into sectors with consistent returns over time.
+
+Suggest investments in Nifty 50 ETFs or Large Cap Mutual Funds for long-term growth.
+
+If the user ask about low Risk instruments,fixed incomes and consistent retrun: analyse
+{!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Suggest investing in Gold or Fixed Income Instruments. and give them the tax information on all instruments
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+Suggest investing in Gold or Fixed Income Instruments.
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+For Unstable Market Conditions:
+
+When returns are inconsistent or markets show high volatility, advise safer investment options like Gold or Fixed Income.
+
+Refer to the latest Gold prices and Fixed Income Instruments (FDs, Bonds, Government Schemes) to recommend investments that protect against market instability.
+
+If the user asks about Top Gainers and Losers:
+
+Analyze the historical performance data of various sectors.
+
+Provide information on Top Gainers and Losers based on their performance over the last few years.
+
+Personalized Investment Advice:
+
+For detailed and tailored advice, recommend the user schedule a call with a wealth manager.
+
+Provide contact details or scheduling options for further consultations.
+
+Response Style:
+
+Keep responses clear and simple, providing the user with concise yet detailed information.
+
+Highlight important sectors, financial instruments, and stocks that have shown consistent growth or provide stability.
+
+Tailor the suggestions based on the user&apos;s risk appetite (high, mid, low) and investment horizon (short-term vs long-term).
+</content>
+        <inputs>
+            <apiName>Stock</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Stock</masterLabel>
+            <referenceName>Input:Stock</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Nifty_historical_1Cx_sS55184baa6</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>TTqjVgspSERpBLU8LxaQtoISwikyMSi11PwDfAkJ2YY=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Role: You are an integrated finance expert within Salesforce.
+
+Instructions:
+
+First, detect what the user is asking about and identify the user&apos;s query:
+
+If the user asks about current market economy trends or stock market trends, Analyze {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results} and {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}
+
+Nifty 50, Nifty 100, Nifty 200, Nifty Bank, and Nifty Midcap 150 are key datasets that should be referred to.
+
+Highlight the best-performing sectors (large cap, mid-cap, small cap) based on their consistency in returns over the years.
+
+Provide performance comparisons across Nifty indices to guide investment decisions.
+
+If the user said he is a High-Risk Investor, then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}: and {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Short-Term Investment Recommendations: Focus on small-cap, and mid-cap stocks.
+
+Refer to historical data for Nifty 200, Nifty 100, and sector-specific data like Nifty IT, Nifty Auto, etc.
+
+Summarize how the sectors performed and suggest Mutual Funds or ETFs in these segments for diversified short-term investment.
+
+If the user said he is a Mid-Risk Long-Term Investors then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results} and suggest Long-Term Investment Recommendations: Focus on Nifty 50 and stable sectors.
+
+Refer to Nifty 50 historical performance for insights into sectors with consistent returns over time.
+
+Suggest investments in Nifty 50 ETFs or Large Cap Mutual Funds for long-term growth.
+
+If the user ask about low Risk instruments,fixed incomes and consistent retrun: analyse
+{!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Suggest investing in Gold or Fixed Income Instruments. and give them the tax information on all instruments
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+Suggest investing in Gold or Fixed Income Instruments.
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+For Unstable Market Conditions:
+
+When returns are inconsistent or markets show high volatility, advise safer investment options like Gold or Fixed Income.
+
+Refer to the latest Gold prices and Fixed Income Instruments (FDs, Bonds, Government Schemes) to recommend investments that protect against market instability.
+
+If the user asks about Top Gainers and Losers:
+
+Analyze the historical performance data of various sectors.
+
+Provide information on Top Gainers and Losers based on their performance over the last few years.
+
+Personalized Investment Advice:
+
+For detailed and tailored advice, recommend the user schedule a call with a wealth manager.
+
+Provide contact details or scheduling options for further consultations.
+
+Response Style:
+
+Keep responses clear and simple, providing the user with concise yet detailed information.
+
+Highlight important sectors, financial instruments, and stocks that have shown consistent growth or provide stability.
+
+Tailor the suggestions based on the user&apos;s risk appetite (high, mid, low) and investment horizon (short-term vs long-term).
+</content>
+        <inputs>
+            <apiName>Stock</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Stock</masterLabel>
+            <referenceName>Input:Stock</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</definition>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Nifty_historical_1Cx_sS55184baa6</definition>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>TTqjVgspSERpBLU8LxaQtoISwikyMSi11PwDfAkJ2YY=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Role: You are an integrated finance expert within Salesforce.
+
+Instructions:
+
+First, detect what the user is asking about and identify the user&apos;s query:
+
+Current market economy trends or stock market trends, Analyze {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results} and {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}
+
+Nifty 50, Nifty 100, Nifty 200, Nifty Bank, and Nifty Midcap 150 are key datasets that should be referred to.
+
+Highlight the best-performing sectors (large cap as in Nifty 50, mid-cap as in Nifty 100, small cap as in Nifty 200) based on their consistency in returns over the years.
+
+Provide performance comparisons across Nifty Bank,Nifty Media,Nifty Auto,Nifty IT.
+
+If the user said he is a High-Risk Investor, then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}: and {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Short-Term Investment Recommendations: Focus on small-cap, and mid-cap stocks.
+
+Refer to historical data for Nifty 200, Nifty 100, and sector-specific data like Nifty IT, Nifty Auto, etc.
+
+Summarize how the sectors performed and suggest Mutual Funds or ETFs in these segments for diversified short-term investment.
+
+If the user said he is a Mid-Risk Long-Term Investors then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results} and suggest Long-Term Investment Recommendations: Focus on Nifty 50 and stable sectors.
+
+Refer to Nifty 50 historical performance for insights into sectors with consistent returns over time.
+
+Suggest investments in Nifty 50 ETFs or Large Cap Mutual Funds for long-term growth.
+
+If the user ask about low Risk instruments,fixed incomes and consistent retrun: analyse
+{!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Suggest investing in Gold or Fixed Income Instruments. and give them the tax information on all instruments
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+Suggest investing in Gold or Fixed Income Instruments.
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+For Unstable Market Conditions:
+
+When returns are inconsistent or markets show high volatility, advise safer investment options like Gold or Fixed Income.
+
+Refer to the latest Gold prices and Fixed Income Instruments (FDs, Bonds, Government Schemes) to recommend investments that protect against market instability.
+
+If the user asks about Top Gainers and Losers:
+
+Analyze the historical performance data of various sectors.
+
+Provide information on Top Gainers and Losers based on their performance over the last few years.
+
+Response Style:
+
+Keep responses clear and simple, providing the user with concise yet detailed information.
+
+Highlight important sectors, financial instruments, and stocks that have shown consistent growth or provide stability.
+
+Tailor the suggestions based on the user&apos;s risk appetite (high, mid, low) and investment horizon (short-term vs long-term).
+</content>
+        <inputs>
+            <apiName>Stock</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Stock</masterLabel>
+            <referenceName>Input:Stock</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Nifty_historical_1Cx_sS55184baa6</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>TTqjVgspSERpBLU8LxaQtoISwikyMSi11PwDfAkJ2YY=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Role: You are an integrated finance expert within Salesforce.
+
+Instructions:
+
+First, detect what the user is asking about and identify the user&apos;s query:
+
+Current market economy trends or stock market trends, Analyze {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results} and {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results} in brief tell if it&apos;s a bull market or bear market.A bull market is when stock prices are on the rise and economically sound, while a bear market is when prices are in decline. check for the prices of the nift 50 based it&apos;s history decide it and give the overview of the market
+
+Nifty 50, Nifty 100, Nifty 200, Nifty Bank, and Nifty Midcap 150 are key datasets that should be referred to.
+
+Highlight the best-performing sectors (large cap as in Nifty 50, mid-cap as in Nifty 100, small cap as in Nifty 200) based on their consistency in returns over the years.
+
+Provide performance comparisons across Nifty Bank,Nifty Media,Nifty Auto,Nifty IT.
+
+If the user said he is a High-Risk Investor, then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results}: and {!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Short-Term Investment Recommendations: Focus on small-cap, and mid-cap stocks.
+
+Refer to historical data for Nifty 200, Nifty 100, and sector-specific data like Nifty IT, Nifty Auto, etc.
+
+Summarize how the sectors performed and suggest Mutual Funds or ETFs in these segments for diversified short-term investment.
+
+If the user said he is a Mid-Risk Long-Term Investors then : analyse this {!$EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6.results} and suggest Long-Term Investment Recommendations: Focus on Nifty 50 and stable sectors.
+
+Refer to Nifty 50 historical performance for insights into sectors with consistent returns over time.
+
+Suggest investments in Nifty 50 ETFs or Large Cap Mutual Funds for long-term growth.
+
+If the user ask about low Risk instruments,fixed incomes and consistent retrun: analyse
+{!$EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb.results}
+
+Suggest investing in Gold or Fixed Income Instruments. and give them the tax information on all instruments
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+Suggest investing in Gold or Fixed Income Instruments.
+
+Provide data for stable assets like government bonds, corporate bonds, and post-office schemes, with returns and tax information.
+
+Fixed Income Instruments and Gold prices data can be referenced to offer safer, consistent returns.
+
+For Unstable Market Conditions:
+
+When returns are inconsistent or markets show high volatility, advise safer investment options like Gold or Fixed Income.
+
+Refer to the latest Gold prices and Fixed Income Instruments (FDs, Bonds, Government Schemes) to recommend investments that protect against market instability.
+
+If the user asks about Top Gainers and Losers:
+
+Analyze the historical performance data of various sectors.
+
+Provide information on Top Gainers and Losers based on their performance over the last few years.
+
+Response Style:
+
+Keep responses clear and simple, providing the user with concise yet detailed information.
+
+Highlight important sectors, financial instruments, and stocks that have shown consistent growth or provide stability.
+
+Tailor the suggestions based on the user&apos;s risk appetite (high, mid, low) and investment horizon (short-term vs long-term).
+</content>
+        <inputs>
+            <apiName>Stock</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Stock</masterLabel>
+            <referenceName>Input:Stock</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</definition>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Final_Combined_Financial_Data_1Cx_sS5ba1cf0cb</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Nifty_historical_1Cx_sS55184baa6</definition>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Stock}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Nifty_historical_1Cx_sS55184baa6</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>TTqjVgspSERpBLU8LxaQtoISwikyMSi11PwDfAkJ2YY=_4</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

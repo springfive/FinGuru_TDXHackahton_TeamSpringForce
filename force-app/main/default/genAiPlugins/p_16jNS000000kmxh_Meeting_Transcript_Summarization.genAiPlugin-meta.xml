@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Summarize Zoom meeting transcripts for key points. This topic is chosen when a user requests a summary of their meeting.</description>
+    <developerName>p_16jNS000000kmxh_Meeting_Transcript_Summarization</developerName>
+    <genAiPluginInstructions>
+        <description>if user gives the input . analyze the whole transcript message . Summaries the discussion points and highlight the key notes</description>
+        <developerName>instruction_ifusergive0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifusergive0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>**Key Points Summary**:
+- Provide a concise summary of the key points discussed in the meeting, including decisions and action items.
+- Ensure that the summary only includes points that were explicitly mentioned in the transcript, and nothing extra.
+- Do not summarize based on general assumptions or add any fallback message.</description>
+        <developerName>instruction_keypointss1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_keypointss1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Meeting Transcript Summarization</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only summarize the key points discussed in the Zoom meeting transcripts. You aren&apos;t able to analyze sentiment or highlight specific discussion points.</scope>
+</GenAiPlugin>

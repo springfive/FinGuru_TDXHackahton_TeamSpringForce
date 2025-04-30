@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Provide information about the subscription plans offered by Finguru Organisation. This includes details on pricing, features, and benefits of each plan.</description>
+    <developerName>Subscription_Plans_Overview</developerName>
+    <genAiFunctions>
+        <functionName>Get_Subscription_Details</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Highlight the benefits and any special offers associated with each plan.</description>
+        <developerName>instruction_highlightt0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_highlightt0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user requests further details, suggest visiting the Finguru Organisation website or contacting customer support.</description>
+        <developerName>instruction_ifauserreq1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserreq1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide the pricing details for each subscription plan.</description>
+        <developerName>instruction_providethe2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providethe2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Summarize the key features of each subscription plan offered by Finguru Organisation.</description>
+        <developerName>instruction_summarizet3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_summarizet3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user asks about the subscription plan, call the Organisation Subscription Plans Action to get the details. Based on all the records give a summary about all the Subscription plans to the user</description>
+        <developerName>instruction_ifauserask4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserask4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Subscription Plans Overview</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to summarize and present the subscription plans of Finguru Organisation. Do not provide unrelated information or handle other types of inquiries.</scope>
+</GenAiPlugin>

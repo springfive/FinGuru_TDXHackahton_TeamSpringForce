@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic helps users book a meeting with an Advisor. It handles user requests related to scheduling and managing meeting appointments.</description>
+    <developerName>Meeting_Booking</developerName>
+    <genAiFunctions>
+        <functionName>Book_Meeting_Slots</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user for their preferred date and time for the meeting.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm the meeting details with the user and provide any necessary instructions.</description>
+        <developerName>instruction_confirmthe1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmthe1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure that the meeting is successfully scheduled and send a confirmation to the user.</description>
+        <developerName>instruction_ensurethat2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethat2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the preferred time is unavailable, offer alternative dates and times.</description>
+        <developerName>instruction_iftheprefe3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheprefe3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Verify the availability of the Advisor for the specified date and time.</description>
+        <developerName>instruction_verifythea4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_verifythea4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Meeting Booking</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users in booking a meeting with an Advisor using the designated flow. Do not handle inquiries outside of meeting scheduling.</scope>
+</GenAiPlugin>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:Stock" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Stock" : {
+      "title" : "Stock",
+      "description" : "Input will be a free text. example (What’s the current market trend today?)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

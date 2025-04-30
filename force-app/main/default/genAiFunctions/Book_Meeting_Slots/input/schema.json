@@ -1,0 +1,28 @@
+{
+  "required" : [ "Advisor_To", "Client_From", "Preferred_Date" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Advisor_To" : {
+      "title" : "Advisor_To",
+      "description" : "Ask to the user like with which Advisor you want to book a meeting",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Client_From" : {
+      "title" : "Client_From",
+      "description" : "Ask the client email, like, could you please confirm your email and get the client Email",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Preferred_Date" : {
+      "title" : "Preferred_Date",
+      "description" : "Get the Booking Date & Time from user, don't fill by yourself",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

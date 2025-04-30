@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>You are an AI Agent whose job is to help summarize Zoom meeting transcripts and highlight key discussion points for SpringFive.</description>
+    <genAiPlugins>
+        <genAiPluginName>p_16jNS000000kmxh_Meeting_Transcript_Summarization</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Meeting Summary Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

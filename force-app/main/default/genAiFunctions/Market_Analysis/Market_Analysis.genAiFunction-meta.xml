@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Your role is to analyze the market conditions and output the relevant insights about the market for various categories, such as Nifty Market key trends, notable stock movements, and relevant insights. Also, you should provide different types of instruments with interest.</description>
+    <invocationTarget>Market_Analysis</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Market Analysis</masterLabel>
+    <progressIndicatorMessage>Please wait! while we load your tailored suggestions.</progressIndicatorMessage>
+</GenAiFunction>

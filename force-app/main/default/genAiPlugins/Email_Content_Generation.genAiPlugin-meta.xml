@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Generate email content based on user input requests. Handle various inquiries to create relevant email drafts.</description>
+    <developerName>Email_Content_Generation</developerName>
+    <genAiPluginInstructions>
+        <description>Use the user&apos;s input to draft a clear and concise email.</description>
+        <developerName>instruction_usetheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usetheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Advisor Message: {{user_input}}
+Use this input and draft a professional Email Body</description>
+        <developerName>instruction_advisormes1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_advisormes1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>recipient name will be Client 
+Sender Namee will be Gokul S</description>
+        <developerName>instruction_recipientn2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_recipientn2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Email Content Generation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to generate email content based on the user&apos;s input.</scope>
+</GenAiPlugin>

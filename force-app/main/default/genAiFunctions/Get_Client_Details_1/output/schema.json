@@ -1,0 +1,110 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ClientPortfolioRecord" : {
+      "title" : "ClientPortfolioRecord",
+      "description" : "Whenever the user is asking for the particular client data, give a summary of the Client Portfolio using ClientPortfolioRecord",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Portfolio__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Assets" : {
+      "title" : "Client_Assets",
+      "description" : "When the user is asking about the Client's Asset details, use this 'Client_Assets' output and give a summary based on this and answer the user question",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Asset__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Fianacial_Advise" : {
+      "title" : "Client_Fianacial_Advise",
+      "description" : "When the user is asking about the Client's Financial Advise details, use this 'Client_Fianacial_Advise' output and give a summary based on this  and answer the user question",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Financial_Advices__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Financial_Goals" : {
+      "title" : "Client_Financial_Goals",
+      "description" : "When the user is asking about the Client's Financial Goals details, use this 'Client_Financial_Goals' output and give a summary based on this and answer the user question",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Financial_Goal__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Financial_Logs" : {
+      "title" : "Client_Financial_Logs",
+      "description" : "When the user is asking about the Client's Financial Logs details , use this 'Client_Financial_Logs' output and give a summary based on this and answer the user question",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Financial_Logs__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Financial_Period_Details" : {
+      "title" : "Client_Financial_Period_Details",
+      "description" : "When the user is asking about the Client's Financial Periods details , use this 'Client_Financial_Period_Details' output and give a summary based on this and answer the user question",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Financial_Period__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Client_Investments" : {
+      "title" : "Client_Investments",
+      "description" : "When the user is asking about the Client's Investments details , use this 'Client_Investments' output and give a summary based on this and answer the user question",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Investment__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

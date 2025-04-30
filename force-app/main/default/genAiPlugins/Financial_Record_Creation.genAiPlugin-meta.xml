@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles the creation of financial records such as expenses and assets.</description>
+    <developerName>Financial_Record_Creation</developerName>
+    <genAiFunctions>
+        <functionName>Create_Financial_Log</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>if a user is requesting to create a Expense record by saying add expense or something relevant to expense , use &quot;Create Financial Log&quot; action  and get inputs from user and perform action . 
+Inputs Format:
+1.Amount
+2.Email
+3.Description</description>
+        <developerName>instruction_ifauserisr0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserisr0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Whenever a user mentions an expense (e.g., &quot;I bought [item] for [amount],&quot; &quot;I spent [amount] on [item],&quot; &quot;I subscribed to [service] for [amount]&quot;), ask for:
+
+Amount
+
+Email
+
+Description 
+
+Then, use the &quot;Create Financial Log&quot; action to record the expense.</description>
+        <developerName>instruction_wheneverau1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_wheneverau1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Financial Record Creation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to create financial records including expenses and assets. Do not attempt to perform other financial operations or handle unrelated queries.</scope>
+</GenAiPlugin>

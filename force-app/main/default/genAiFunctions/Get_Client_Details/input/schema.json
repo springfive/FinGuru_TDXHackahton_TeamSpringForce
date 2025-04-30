@@ -1,0 +1,28 @@
+{
+  "required" : [ "ClientEmail", "ClientName", "Which_Portfolio_Detail" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ClientEmail" : {
+      "title" : "ClientEmail",
+      "description" : "Get the Client's Email from the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ClientName" : {
+      "title" : "ClientName",
+      "description" : "Get the Client name from the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Which_Portfolio_Detail" : {
+      "title" : "Which_Portfolio_Detail",
+      "description" : "Ask for which client specific data the user is looking for and get the input for Which_Portfolio_Detail",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

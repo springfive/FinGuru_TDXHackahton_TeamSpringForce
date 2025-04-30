@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles performing a current market analysis and providing insights based on the analysis.</description>
+    <developerName>Market_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>Market_Analysis</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather data on current market trends, including competitor analysis and market share.</description>
+        <developerName>instruction_gatherdata0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_gatherdata0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Analyze the gathered data to identify key insights and trends.</description>
+        <developerName>instruction_analyzethe1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_analyzethe1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide a summary of the market analysis, highlighting significant findings and potential opportunities.</description>
+        <developerName>instruction_provideasu2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_provideasu2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If additional information is required from the user, ask clarifying questions to gather the necessary data.</description>
+        <developerName>instruction_ifaddition3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifaddition3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure that the insights provided are relevant and actionable for the user.</description>
+        <developerName>instruction_ensurethat4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ensurethat4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Market Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to perform a market analysis and provide relevant insights based on the analysis. Do not attempt to respond to inquiries outside of this scope.</scope>
+</GenAiPlugin>

@@ -1,0 +1,43 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Advisor_Financial_Advise" : {
+      "title" : "Advisor_Financial_Advise",
+      "description" : "If you received this data which means that Advisor is having another meeting on that time, so don't tell any data about Advisor meeting, just analyze the free slot from these data and request the user again for another preferred date between the working hours 10.00 AM to 7.00 PM",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordInfoType",
+        "lightning:sObjectInfo" : {
+          "apiName" : "Financial_Advices__c"
+        }
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Reponse_From_Flow" : {
+      "title" : "Reponse_From_Flow",
+      "description" : "Just check what you are receiving here",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Scheduled_Financial_Advise" : {
+      "title" : "Scheduled_Financial_Advise",
+      "description" : "Once you got this output variable, convey that the booking is successful to the user and give the summary of this Scheduled_Financial_Advise as well",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Financial_Advices__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

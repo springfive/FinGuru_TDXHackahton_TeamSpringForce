@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic covers inquiries related to the subscription plans offered by the organization. It includes details about plan features, pricing, and how to subscribe or upgrade.</description>
+    <developerName>Organisation_Subscription_Plans</developerName>
+    <genAiFunctions>
+        <functionName>Get_Subscription_Details1</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user asks about the subscription plan, call the Organisation Subscription Plans Action to get the details. Based on all the records give a summary about all the Subscription plans to the user</description>
+        <developerName>instruction_ifauserask0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserask0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Organisation Subscription Plans</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide information about the subscription plans, including features, pricing, and how to subscribe or upgrade. Do not handle unrelated queries.</scope>
+</GenAiPlugin>
