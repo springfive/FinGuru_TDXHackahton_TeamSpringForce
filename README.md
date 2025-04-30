@@ -98,6 +98,12 @@ We will focus on improving the **UI/UX** of the **user site** by:
 ### 3. **Real-time API Integration:**
 Currently, we rely on **historical data** for stocks, real estate, mutual funds, crypto, and gold information. To enhance decision-making and provide users with the latest market insights, we plan to implement **real-time API integration**, allowing us to deliver up-to-date market data. This will enable users to make more informed investment decisions based on the **latest market trends**, **prices**, and **news**.
 
+### 4 If more time permitted, we would have integrated a real-time API to fetch dynamic stock and market prices, providing regular updates to guide users. Additionally, we planned to offer in-depth stock analysis, including book value and trade value insights. 
+
+### 5 We also aimed to connect Zoom links dynamically, so when users have meetings, the transcription would automatically update the financial advice object, creating tasks based on the transcriptions.
+
+### 6 This solution can help any stock broker's platform where instead of mannualy checking stocks and returns user can simply ask the agents for all the inputs
+
 
 
 
