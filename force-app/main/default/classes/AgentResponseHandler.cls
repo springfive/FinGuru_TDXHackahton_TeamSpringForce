@@ -103,4 +103,35 @@ public class AgentResponseHandler {
         
         System.debug('Email sent to: ' + toAddress);
     }
+    
+    private static String createZoomMeeting(String topic, DateTime startTime, Integer duration) {
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('https://api.zoom.us/v2/users/me/meetings');
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setHeader('Authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJZb3VyX0FQSV9LZXkiLCJleHAiOjE2ODk5OTk5OTl9.Pa9xjYvQf8wT2bQwX3kUj1Vn1b4gD9w6v8QvF4gQK1A'); // Replace with your token
+        
+        String isoStartTime = startTime.format('yyyy-MM-dd\'T\'HH:mm:ss\'Z\'');
+
+        Map<String, Object> body = new Map<String, Object>{
+            'topic' => topic,
+            'type' => 2, // Scheduled meeting
+            'start_time' => isoStartTime,
+            'duration' => duration,
+            'timezone' => 'UTC'
+        };
+        
+        req.setBody(JSON.serialize(body));
+
+        Http http = new Http();
+        HttpResponse res = http.send(req);
+        
+        if (res.getStatusCode() == 201) {
+            Map<String, Object> resBody = (Map<String, Object>) JSON.deserializeUntyped(res.getBody());
+            return (String) resBody.get('join_url');
+        } else {
+            System.debug('Zoom Meeting Creation Failed: ' + res.getBody());
+            return null;
+        }
+    }
 }

@@ -1,0 +1,5 @@
+{
+  "apiName" : "Financial_Goal_List",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

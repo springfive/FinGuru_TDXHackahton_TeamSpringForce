@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Financial Goal Detail",
+  "contentBody" : {
+    "activeViewId" : "Financial_Goal_Detail",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "detail-Financial_Goal__c",
+    "urlPrefix" : "financial-goal"
+  },
+  "urlName" : "financial-goal-detail"
+}

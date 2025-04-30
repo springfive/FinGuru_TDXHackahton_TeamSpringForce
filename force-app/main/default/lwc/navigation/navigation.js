@@ -10,16 +10,18 @@ export default class Navigation extends LightningElement {
     homePageUrl = `${communityBaseUrl}`;
 
         // Hardcoded API Name for Task object and filterName (you can adjust filter as needed)
-        objectApiName = 'Task';  // Hardcoded object API name for Task
-        filterName = 'all';  // You can dynamically change this based on conditions, or hardcode 'all', 'open', etc.
+       // objectApiName = 'Task';  // Hardcoded object API name for Task
+       // filterName = 'all';  // You can dynamically change this based on conditions, or hardcode 'all', 'open', etc.
     
-
+        objectApiName = 'Financial_Goal__c';  // Hardcoded object API name for Task
+        filterName = 'all'; 
     taskLink = '';
+    goalLink = '';
 
     
     connectedCallback() {
         this.setPortfolioLink();  // Set the portfolio link when the component is loaded
-        this.setTaskLink();  // Set the task link dynamically
+        this.setGoalLink();  // Set the task link dynamically
     }
         // Construct the portfolio link with recordId and recordName
     setPortfolioLink() {
@@ -27,8 +29,8 @@ export default class Navigation extends LightningElement {
     }
 
     // Construct the task link with hardcoded objectApiName and filterName
-    setTaskLink() {
-        this.taskLink = `${communityBaseUrl}/task/${this.objectApiName}/${this.filterName}`;
+    setGoalLink() {
+        this.goalLink = `${communityBaseUrl}/financial-goal/${this.objectApiName}/${this.filterName}`;
     }
 
 

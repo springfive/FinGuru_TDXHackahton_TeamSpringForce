@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Task List",
+  "title" : "Financial Goal List",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -14,7 +14,7 @@
             "layoutDirectionTablet" : "column",
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
-            "sectionConfig" : "{\"UUID\":\"30707e90-4a43-470b-a48a-ce7454aa33e3\",\"columns\":[{\"UUID\":\"e6962f07-d09a-44a1-a222-cfb8dee411ae\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionConfig" : "{\"UUID\":\"c0bc5cea-328b-4ef6-9b5f-a6e3119163ee\",\"columns\":[{\"UUID\":\"16946cca-4582-4f3e-a9f0-b9809f0c5d89\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
             "sectionMinHeight" : "",
             "sectionVerticalAlign" : "flex-start"
           },
@@ -59,46 +59,46 @@
                     "children" : [ {
                       "attributes" : { },
                       "definition" : "dxp_page_layout:placeHolder",
-                      "id" : "7fbb1ed9-d575-413d-8fe1-1463cd58d4cd",
+                      "id" : "6ac830e5-2e27-47b8-8c1b-c759f9d2568d",
                       "type" : "component"
                     } ],
-                    "id" : "47640ad5-ed4d-424d-af5c-fa1aca551416",
+                    "id" : "884c516b-f519-4f94-a018-8257b1fba302",
                     "name" : "placeholder",
                     "title" : "placeholder",
                     "type" : "region"
                   } ],
                   "definition" : "dxp_content_layout:paginator2",
-                  "id" : "29eb44b0-a174-468f-9177-82ee62b69ece",
+                  "id" : "cedf5e74-42fa-4fea-bbf6-4a6d84ed5e99",
                   "type" : "component"
                 } ],
-                "id" : "4c7ee1f4-7e9e-4064-8b8a-3fdac0eaea11",
+                "id" : "838224a4-adfe-42ef-91c8-5f5b7f01c361",
                 "name" : "pagination",
                 "title" : "pagination",
                 "type" : "region"
               } ],
               "definition" : "dxp_content_layout:recordListLayout",
-              "id" : "3cd93f3e-5660-4476-82e1-3f1346858ccd",
+              "id" : "25efb58d-5353-4fc0-a2f9-db4327864145",
               "type" : "component",
               "dataProviders" : [ {
                 "definition" : "sfdc_cms__recordListLayoutDataProvider",
                 "sfdcExpressionKey" : "Item",
                 "attributes" : {
-                  "listViewApiName" : "__Recent",
-                  "objectApiName" : "task",
+                  "listViewApiName" : "All",
+                  "objectApiName" : "Financial_Goal__c",
                   "pageSize" : 5
                 }
               } ]
             } ],
-            "id" : "e6962f07-d09a-44a1-a222-cfb8dee411ae",
+            "id" : "16946cca-4582-4f3e-a9f0-b9809f0c5d89",
             "name" : "col1",
             "title" : "Column 1",
             "type" : "region"
           } ],
           "definition" : "community_layout:section",
-          "id" : "30707e90-4a43-470b-a48a-ce7454aa33e3",
+          "id" : "c0bc5cea-328b-4ef6-9b5f-a6e3119163ee",
           "type" : "component"
         } ],
-        "id" : "ef828e3b-3d8e-42d9-9810-11566c2b2abd",
+        "id" : "251638ce-a9a9-4bce-a664-e84d57c86077",
         "name" : "content",
         "title" : "Content",
         "type" : "region"
@@ -108,21 +108,21 @@
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",
-          "id" : "870e61f5-c300-4b50-a1c5-1c886f57130d",
+          "id" : "f5aec3f5-9ac3-499d-88d0-fd8ec861c097",
           "type" : "component"
         } ],
-        "id" : "cd3d2fb9-585a-4334-bb8d-eb9fde2a91bd",
+        "id" : "9c44bfa3-bf94-41b3-8686-34469cc16ba6",
         "name" : "sfdcHiddenRegion",
         "title" : "sfdcHiddenRegion",
         "type" : "region"
       } ],
       "definition" : "community_layout:sldsFlexibleLayout",
-      "id" : "88555ef3-84ba-4e24-bb41-b88f05fdb700",
+      "id" : "990ee862-9542-47fc-88b9-665e6d29fead",
       "type" : "component"
     },
     "dataProviders" : [ ],
     "themeLayoutType" : "Inner",
-    "viewType" : "list-00T"
+    "viewType" : "list-Financial_Goal__c"
   },
-  "urlName" : "task-list"
+  "urlName" : "financial-goal-list"
 }
