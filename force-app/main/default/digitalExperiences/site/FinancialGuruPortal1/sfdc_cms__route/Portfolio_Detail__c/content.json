@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Portfolio Detail",
+  "contentBody" : {
+    "activeViewId" : "Portfolio_Detail",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "detail-Portfolio__c",
+    "urlPrefix" : "portfolio"
+  },
+  "urlName" : "portfolio-detail"
+}

@@ -1,0 +1,58 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Portfolio Related List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"10b29e2d-3ff8-4677-85df-19ddebab3397\",\"columns\":[{\"UUID\":\"39bcc0ba-f50a-4dd3-ac68-c056fa3324ae\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "id" : "39bcc0ba-f50a-4dd3-ac68-c056fa3324ae",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "10b29e2d-3ff8-4677-85df-19ddebab3397",
+          "type" : "component"
+        } ],
+        "id" : "1f77dc41-3837-4574-95d2-985015f2f655",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "63f2a4d5-876a-43dc-bfcc-a6f2fcc3fa37",
+          "type" : "component"
+        } ],
+        "id" : "146cc0d2-6024-43fb-8cc5-9d1b8bb88a4b",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "176793a3-6dff-44e2-9c6e-5293608c9af9",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "relatedlist-Portfolio__c"
+  },
+  "urlName" : "portfolio-related-list"
+}

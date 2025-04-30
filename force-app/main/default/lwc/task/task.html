@@ -1,0 +1,56 @@
+<template>
+    <div class="dashboard-wrapper">
+        <!-- Task Section (Left) -->
+        <div class="task-container">
+            <div class="task-header">
+                <h2>Tasks</h2>
+                <span class="badge">{pendingTasks} pending</span>
+            </div>
+
+            <template for:each={tasks} for:item="task">
+                <div key={task.Id} class={task.className}>
+                    <div class="task-row">
+                        <input 
+                            type="checkbox" 
+                            data-id={task.Id} 
+                            checked={task.isCompleted}
+                            onclick={handleTaskToggle}
+                            class="checkbox"
+                        />
+                        <div>
+                            <div class={task.titleClass}>{task.Description}</div>
+                            <div class="task-date">Due: {task.formattedDate}</div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!-- Meeting Section (Right) -->
+        <div class="meeting-container">
+            <div class="meeting-header">
+                <h2>Upcoming Meetings</h2>
+            </div>
+
+            <template if:true={meetings}>
+                <template for:each={meetings} for:item="meeting">
+                    <div key={meeting.Id} class="meeting-box">
+                        <div class="meeting-header-row">
+                            <div class="calendar-icon">📅</div>
+                            <div class="meeting-title">{meeting.Name}</div>
+                        </div>
+                        <div class="meeting-time-row">
+                            <span class="badge-date">{meeting.date}</span>
+                            <span class="badge-time">{meeting.time}</span>
+                        </div>
+                        <div class="meeting-agenda">
+                            <strong>Agenda:</strong>
+                            <div class="agenda-text">{meeting.cleanAgenda}</div>
+                            
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </div>
+</template>

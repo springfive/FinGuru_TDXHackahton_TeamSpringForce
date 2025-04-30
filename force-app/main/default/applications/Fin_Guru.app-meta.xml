@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Fin Guru</label>
+    <navType>Standard</navType>
+    <tabs>Financial_Advices__c</tabs>
+    <tabs>Financial_Logs__c</tabs>
+    <tabs>Financial_Period__c</tabs>
+    <tabs>standard-FinancialGoal</tabs>
+    <tabs>Asset__c</tabs>
+    <tabs>Investment__c</tabs>
+    <tabs>Portfolio__c</tabs>
+    <tabs>Subscription_Plan__c</tabs>
+    <tabs>slackv2__Subscription__c</tabs>
+    <tabs>slackv2__Subscription_Type__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Fin_Guru_UtilityBar</utilityBar>
+</CustomApplication>

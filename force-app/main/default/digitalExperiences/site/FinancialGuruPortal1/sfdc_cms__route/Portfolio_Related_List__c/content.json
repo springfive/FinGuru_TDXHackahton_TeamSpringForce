@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Portfolio Related List",
+  "contentBody" : {
+    "activeViewId" : "Portfolio_Related_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-Portfolio__c",
+    "urlPrefix" : "portfolio"
+  },
+  "urlName" : "portfolio-related-list"
+}

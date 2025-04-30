@@ -1,0 +1,89 @@
+<template>
+    <lightning-card title="Portfolio Dashboard">
+
+        <!-- Health Bar -->
+        <div class="health-bar-container">
+            <p class="feedback-message">{healthMessage}</p>
+
+            <!-- Labels above the bar -->
+            <div class="health-bar-labels">
+                <span class="bar-label">Saving</span>
+                <span class="bar-label">Expenditure</span>
+            </div>
+
+            <div class="health-bar">
+                <div class="saving-bar" style={savingBarStyle}></div>
+                <div class="expenditure-bar" style={expenditureBarStyle}></div>
+            </div>
+        </div>
+
+        <!-- Donut Charts Section -->
+        <div class="multiple-chart-wrapper">
+            <!-- Existing Portfolio Chart -->
+            <div class="chart-container">
+                <div class="donut-chart-container">
+                    <div class="donut-chart" style={donutChartStyles}></div>
+                    <span class="chart-label">Portfolio</span>
+                </div>
+                <div class="percentage-labels">
+                    <template for:each={chartData} for:item="item">
+                        <div class="percentage-label" key={item.label}>
+                            <span class="color-box" style={item.style}></span>
+                            <span>{item.label}: {item.percentage}%</span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- New Savings Breakdown Chart -->
+            <div class="chart-container">
+                <div class="donut-chart-container">
+                    <div class="donut-chart" style={savingChartStyle}></div>
+                    <div class="chart-label">Savings</div>
+                </div>
+                <div class="percentage-labels">
+                    <template for:each={savingsChartData} for:item="item">
+                        <div class="percentage-label" key={item.label}>
+                            <span class="color-box" style={item.style}></span>
+                            <span>{item.label}: {item.percentage}%</span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- New Expenditure Breakdown Chart -->
+<div class="chart-container">
+    <div class="donut-chart-container">
+        <div class="donut-chart" style={expenditureChartStyle}></div>
+        <div class="chart-label">Expenditure</div>
+    </div>
+    <div class="percentage-labels">
+        <template for:each={expenditureChartData} for:item="item">
+            <div class="percentage-label" key={item.label}>
+                <span class="color-box" style={item.style}></span>
+                <span>{item.label}: {item.percentage}%</span>
+            </div>
+        </template>
+    </div>
+</div>
+
+
+<!-- New Income Breakdown Chart -->
+<div class="chart-container">
+    <div class="donut-chart-container">
+        <div class="donut-chart" style={incomeChartStyle}></div>
+        <span class="chart-label">Income</span>
+    </div>
+    <div class="percentage-labels">
+        <template for:each={incomeChartData} for:item="item">
+            <div class="percentage-label" key={item.label}>
+                <span class="color-box" style={item.style}></span>
+                <span>{item.label}: {item.percentage}%</span>
+            </div>
+        </template>
+    </div>
+</div>
+
+        </div>
+    </lightning-card>
+</template>

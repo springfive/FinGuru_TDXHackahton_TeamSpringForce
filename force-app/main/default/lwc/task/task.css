@@ -1,0 +1,176 @@
+.dashboard-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Equal half width for both sections */
+.task-container,
+.meeting-container {
+    flex: 1;
+    max-width: 70%;
+}
+
+.task-container {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    max-width: 700px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 0.3rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.task-box {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    transition: background 0.3s;
+}
+
+.completed-bg {
+    background-color: #f3f4f6;
+}
+
+.task-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.task-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+
+.task-date {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 0.25rem;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #2563eb;
+    margin-top: 0.2rem;
+}
+
+/* Meeting styling */
+.meeting-container {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    max-width: 700px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.meeting-header {
+    margin-bottom: 1rem;
+}
+
+.meeting-box {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+}
+
+.meeting-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.meeting-agenda {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-top: 0.25rem;
+}
+
+.meeting-datetime {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+
+
+.meeting-box {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.meeting-header-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-icon {
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+
+.meeting-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.meeting-time-row {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge-date, .badge-time {
+    background-color: #e5efff;
+    color: #1e40af;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.meeting-agenda {
+    font-size: 0.875rem;
+    color: #374151;
+}
+.agenda-text {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #374151;
+}

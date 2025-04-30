@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yet To Discuss</fullName>
+                <default>false</default>
+                <label>Yet To Discuss</label>
+            </value>
+            <value>
+                <fullName>Discussion Completed</fullName>
+                <default>false</default>
+                <label>Discussion Completed</label>
+            </value>
+            <value>
+                <fullName>Discussion Cancelled</fullName>
+                <default>false</default>
+                <label>Discussion Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
