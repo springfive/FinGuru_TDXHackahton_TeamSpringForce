@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Discussion Cancelled</masterLabel>
+        <translation><!-- Discussion Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discussion Completed</masterLabel>
+        <translation><!-- Discussion Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yet To Discuss</masterLabel>
+        <translation><!-- Yet To Discuss --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Type --></label>
+    <name>Sub_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business</masterLabel>
+        <translation><!-- Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commute</masterLabel>
+        <translation><!-- Commute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crypto</masterLabel>
+        <translation><!-- Crypto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dividends</masterLabel>
+        <translation><!-- Dividends --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment</masterLabel>
+        <translation><!-- Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fun</masterLabel>
+        <translation><!-- Fun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gold</masterLabel>
+        <translation><!-- Gold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest</masterLabel>
+        <translation><!-- Interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutual Fund</masterLabel>
+        <translation><!-- Mutual Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate</masterLabel>
+        <translation><!-- Real Estate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent</masterLabel>
+        <translation><!-- Rent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salary</masterLabel>
+        <translation><!-- Salary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stocks</masterLabel>
+        <translation><!-- Stocks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subscriptions</masterLabel>
+        <translation><!-- Subscriptions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>food &amp; groceries</masterLabel>
+        <translation><!-- food &amp; groceries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>shopping</masterLabel>
+        <translation><!-- shopping --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

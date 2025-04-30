@@ -10,12 +10,9 @@
       },
       "children" : [ {
         "children" : [ {
-          "attributes" : {
-            "imageInfos" : "",
-            "richTextValue" : "<div style=\"display: flex; align-items: center; justify-content: flex-end; padding: 3px;\">\n  \n  <!-- Notification Icon -->\n  <div style=\"margin-right: 10px; font-size: 24px; color: white;\">\n    \uD83D\uDD14\n  </div>\n\n  <!-- User Icon -->\n  <div style=\"margin-right: 10px; font-size: 24px; color: white;\">\n    \uD83D\uDC64\n  </div>\n\n  <!-- Username -->\n  <div style=\"font-size: 18px; color: black; font-weight: bold;\">\n    John Doe\n  </div>\n\n</div>"
-          },
-          "definition" : "community_builder:htmlEditor",
-          "id" : "8d02262a-5e36-41ee-9dfb-9dee21f25a63",
+          "attributes" : { },
+          "definition" : "c:userNavigation",
+          "id" : "66441ea1-00ce-45c0-9acd-552f4615b170",
           "type" : "component"
         }, {
           "attributes" : { },
@@ -37,12 +34,6 @@
             "sectionVerticalAlign" : "flex-start"
           },
           "children" : [ {
-            "children" : [ {
-              "attributes" : { },
-              "definition" : "c:portfolioDashboard",
-              "id" : "50ffb2a2-230b-4156-bcd2-d68b285507ce",
-              "type" : "component"
-            } ],
             "id" : "4a8e5af2-8b32-47cf-8945-53954bb5b3c3",
             "name" : "headerSection",
             "title" : "Theme Header",
@@ -72,6 +63,18 @@
             "sectionVerticalAlign" : "flex-start"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "deploymentName" : "Marketing_Agent_Site",
+                "hideChatButtonOnLoad" : "Default",
+                "isExpSiteAuthMode" : false,
+                "scrtUrl" : "https://orgfarm-8116c22837.my.salesforce-scrt.com",
+                "siteEndpoint" : "https://orgfarm-8116c22837.my.site.com/ESWMarketingAgentSite1745997290493"
+              },
+              "definition" : "experience_messaging:embeddedMessaging",
+              "id" : "47a3a29a-b838-4aa5-a643-7424be8a0db7",
+              "type" : "component"
+            } ],
             "id" : "8b584eb8-1848-4b9d-a345-16bba58ff8ad",
             "name" : "footerSection",
             "title" : "Theme Footer",

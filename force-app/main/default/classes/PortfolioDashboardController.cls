@@ -1,5 +1,5 @@
 // File: PortfolioDashboardController.cls
-public with sharing class PortfolioDashboardController {
+public without sharing class PortfolioDashboardController {
     @AuraEnabled(cacheable=true)
     public static PortfolioDashboardData getPortfolioData() {
         // Assuming we are fetching the first record for now

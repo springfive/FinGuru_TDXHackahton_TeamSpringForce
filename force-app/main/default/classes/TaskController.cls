@@ -1,4 +1,4 @@
-public with sharing class TaskController {
+public without sharing class TaskController {
     @AuraEnabled(cacheable=true)
     public static List<Task> getAllTasks() {
          return [SELECT Id, Subject, Description, ActivityDate FROM Task WHERE Status != 'Completed' ORDER BY ActivityDate ASC];

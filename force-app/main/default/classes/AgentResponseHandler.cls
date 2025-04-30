@@ -11,7 +11,7 @@ public class AgentResponseHandler {
             
             // Extract the rich text and convert it to plain text
             String richText = financialAdvise.Reccommendation__c;
-            String plainText = 'Send Email Summary of this content' + richText.replaceAll('<[^>]*>', ''); // Remove HTML tags
+            String plainText = 'Send Email Summary of this content - ' + richText.replaceAll('<[^>]*>', ''); // Remove HTML tags
             
             // Set the user message for the agent
             action.setInvocationParameter('userMessage', plainText);
@@ -56,6 +56,14 @@ public class AgentResponseHandler {
             // Create a task based on the agent's response
             String taskDescription = 'Follow-up on action recommended by the agent: ' + value;
             createTask(taskDescription);
+            
+            // Trim the content to only include the part until "Best regards, Gokul S"
+            String trimmedContent = value;
+            String endString = 'Best regards, Gokul S';
+            Integer endIndex = trimmedContent.indexOf(endString);
+            if (endIndex != -1) {
+                trimmedContent = trimmedContent.substring(0, endIndex + endString.length());
+            }
             
             // Send an email notification based on the agent's response
             if (!clientFA.isEmpty()) {

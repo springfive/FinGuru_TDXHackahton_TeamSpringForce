@@ -7,11 +7,35 @@
             <publicGroup>AllInternalUsers</publicGroup>
         </publicGroups>
         <users>
+            <user>aswin@ngfive.com</user>
+            <user>b2bmaintegration@00dns00000ibss52aj.ext</user>
             <user>dhees@springfive.com</user>
+            <user>market_analysis_agent@00dns00000ibss5.ext</user>
+            <user>advisor_agent@00dns00000ibss5.ext</user>
+            <user>recommendation_analysis_agent@00dns00000ibss5.ext</user>
+            <user>email_summary_agent@00dns00000ibss5.ext</user>
+            <user>equipe.springfive@tdx.com</user>
+            <user>gokul@springfive.com</user>
+            <user>insightsintegration@00dns00000ibss52aj.ext</user>
+            <user>integration@00dns00000ibss52aj.com</user>
+            <user>epic.ea78cc81f428@orgfarm.com</user>
+            <user>salesforceiqintegration@00dns00000ibss52aj.ext</user>
         </users>
     </queueMembers>
     <queueRoutingConfig>MessagingSession</queueRoutingConfig>
     <queueSobject>
+        <sobjectType>Centro__Message_Queue__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LocWaitlistMsgTemplate</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingEndUser</sobjectType>
+    </queueSobject>
+    <queueSobject>
         <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>slackv2__Message_Destination__c</sobjectType>
     </queueSobject>
 </Queue>

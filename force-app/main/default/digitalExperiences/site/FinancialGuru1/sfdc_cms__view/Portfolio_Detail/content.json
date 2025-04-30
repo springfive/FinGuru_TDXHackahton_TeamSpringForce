@@ -19,6 +19,34 @@
             "sectionVerticalAlign" : "flex-start"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "layout" : "{!Item._layout}",
+                "mainTitlePaddingHorizontal" : "none",
+                "mainTitlePaddingVertical" : "none",
+                "mainTitleText" : "Your text",
+                "mainTitleTextDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h3\",\"enableOverride\":false}",
+                "metadata" : "{!Item._metadata._context}",
+                "recordIdFromDataProvider" : "{!Item.Id}",
+                "showTitle" : true
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "ea94859a-596c-4d9b-878f-543d807b9975",
+                  "type" : "component"
+                } ],
+                "id" : "ea9f3da4-61d8-4da0-80b3-75e7ef900877",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_records:detailPanel",
+              "id" : "b870117a-ffc7-4878-bcae-b832aac6a769",
+              "type" : "component"
+            } ],
             "id" : "1d4665d4-8579-458d-b4c6-78db7f4dbd0c",
             "name" : "col1",
             "title" : "Column 1",

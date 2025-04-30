@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Preferences --></label>
+    <name>Preferences__c</name>
+    <picklistValues>
+        <masterLabel>Dept Funds</masterLabel>
+        <translation><!-- Dept Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equity Funds</masterLabel>
+        <translation><!-- Equity Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FD</masterLabel>
+        <translation><!-- FD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gold</masterLabel>
+        <translation><!-- Gold --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,10 +1,28 @@
 <template>
     <div class="navbar">
-        <a href="#Home" class="nav-link">Home</a>
-        <a href={portfolioLink} class="nav-link">Portfolio</a>
-        <a href="#task" class="nav-link">Task</a>
-        <a href="#goals" class="nav-link">Goals</a>
-        <a href="#investments" class="nav-link">Investments</a>
-        <a href="#assets-liabilities" class="nav-link">Assets/Liabilities</a>
+        <a href={homePageUrl} target="_self" class="nav-link">
+            <!-- <lightning-icon icon-name="utility:home" size="small"></lightning-icon> -->
+            Home
+        </a>
+        <a href={portfolioLink} class="nav-link">
+            <!-- <lightning-icon icon-name="utility:portfolio" size="small"></lightning-icon> -->
+            Portfolio
+        </a>
+        <a href={taskLink} class="nav-link">
+            <!-- <lightning-icon icon-name="utility:task" size="small"></lightning-icon> -->
+            Task
+        </a>
+        <a href="#goals" class="nav-link">
+            <!-- <lightning-icon icon-name="utility:goal" size="small"></lightning-icon> -->
+            Goals
+        </a>
+        <a href="#investments" class="nav-link">
+            <!-- <lightning-icon icon-name="utility:investment" size="small"></lightning-icon> -->
+            Investments
+        </a>
+        <a href="#assets-liabilities" class="nav-link">
+            <!-- <lightning-icon icon-name="utility:money" size="small"></lightning-icon> -->
+            Assets/Liabilities
+        </a>
     </div>
 </template>

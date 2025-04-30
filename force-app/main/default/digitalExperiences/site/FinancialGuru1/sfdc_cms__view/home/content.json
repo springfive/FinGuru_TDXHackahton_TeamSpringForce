@@ -21,6 +21,11 @@
           "children" : [ {
             "children" : [ {
               "attributes" : { },
+              "definition" : "c:portfolioDashboard",
+              "id" : "8cce1d96-7b97-413b-bbae-cb2fbdd551bc",
+              "type" : "component"
+            }, {
+              "attributes" : { },
               "definition" : "c:task",
               "id" : "95ec2ed1-1417-4d5d-83db-5a7e105f7de9",
               "type" : "component"
